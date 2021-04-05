@@ -17,7 +17,7 @@ RSpec.describe Product, type: :model do
     it 'should not save without name' do
       @category = Category.create(name: "noname")
       item = Product.new(
-        # name: nil,
+        name: nil,
         price: 4.00,
         quantity: 11,
         category_id: @category.id
