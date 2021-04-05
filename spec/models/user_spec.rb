@@ -15,12 +15,6 @@ RSpec.describe User, type: :model do
       expect(user).to (be_valid)
     end
 
-
-
-#making changes here!!!!
-
-
-
     it 'should be invalid without email' do
       user = User.create(
         name: 'Bob',
